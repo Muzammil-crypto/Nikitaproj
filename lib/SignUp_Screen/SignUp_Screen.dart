@@ -4,6 +4,7 @@ import 'package:practice/Authentication/login_page.dart';
 
 import '../color_class.dart';
 
+@immutable
 class SignUpScreen extends StatelessWidget {
   TextEditingController emailController = new TextEditingController();
   TextEditingController passwordController = new TextEditingController();
@@ -28,7 +29,7 @@ class SignUpScreen extends StatelessWidget {
                 width: med.width * 0.8,
                 decoration: BoxDecoration(
                   color: cColor().black,
-                  image: DecorationImage(
+                  image: const DecorationImage(
                     image: AssetImage("assets/logo.png"),
                     fit: BoxFit.cover,
                   ),
@@ -46,12 +47,11 @@ class SignUpScreen extends StatelessWidget {
                   borderRadius: BorderRadius.circular(25),
                 ),
                 child: TextFormField(
-                
-                  style:TextStyle(
-                      color: cColor().yellow,
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
-                    ) ,
+                  style: TextStyle(
+                    color: cColor().yellow,
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                  ),
                   controller: usernameController,
                   keyboardType: TextInputType.emailAddress,
                   cursorColor: cColor().yellow,
@@ -67,12 +67,12 @@ class SignUpScreen extends StatelessWidget {
                     enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.all(Radius.circular(25.0)),
                         borderSide: BorderSide(color: cColor().blue)),
-                    labelStyle:TextStyle(
+                    labelStyle: TextStyle(
                       color: cColor().yellow,
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
                     ),
-                     labelText: "Username",
+                    labelText: "Username",
                     contentPadding: EdgeInsets.only(left: 18),
                     // ignore: missing_return
                   ),
@@ -90,7 +90,6 @@ class SignUpScreen extends StatelessWidget {
 
             //Username or email textfield
             Center(
-
               child: Container(
                 width: med.width * 0.65,
                 decoration: BoxDecoration(
@@ -98,11 +97,11 @@ class SignUpScreen extends StatelessWidget {
                   borderRadius: BorderRadius.circular(25),
                 ),
                 child: TextFormField(
-                     style:TextStyle(
-                      color: cColor().yellow,
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
-                    ) ,
+                  style: TextStyle(
+                    color: cColor().yellow,
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                  ),
                   controller: emailController,
                   keyboardType: TextInputType.emailAddress,
                   cursorColor: cColor().yellow,
@@ -117,12 +116,12 @@ class SignUpScreen extends StatelessWidget {
                     enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.all(Radius.circular(25.0)),
                         borderSide: BorderSide(color: cColor().blue)),
-                     labelStyle: TextStyle(
+                    labelStyle: TextStyle(
                       color: cColor().yellow,
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
                     ),
-                     labelText: "Email",
+                    labelText: "Email",
                     contentPadding: EdgeInsets.only(left: 18),
                     // ignore: missing_return
                   ),
@@ -135,7 +134,7 @@ class SignUpScreen extends StatelessWidget {
             ),
 
             SizedBox(
-                  height: med.height * 0.025,
+              height: med.height * 0.025,
             ),
 
             //Password
@@ -147,12 +146,12 @@ class SignUpScreen extends StatelessWidget {
                   borderRadius: BorderRadius.circular(25),
                 ),
                 child: TextFormField(
-                     style:TextStyle(
-                      color: cColor().yellow,
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
-                    ) ,
-                  controller :passwordController,
+                  style: TextStyle(
+                    color: cColor().yellow,
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                  ),
+                  controller: passwordController,
                   keyboardType: TextInputType.emailAddress,
                   cursorColor: cColor().yellow,
                   obscureText: true,
@@ -167,7 +166,7 @@ class SignUpScreen extends StatelessWidget {
                     enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.all(Radius.circular(25.0)),
                         borderSide: BorderSide(color: cColor().blue)),
-                     labelStyle: TextStyle(
+                    labelStyle: TextStyle(
                       color: cColor().yellow,
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
@@ -184,7 +183,7 @@ class SignUpScreen extends StatelessWidget {
               ),
             ),
             SizedBox(
-                   height: med.height * 0.025,
+              height: med.height * 0.025,
             ),
 
             //Password
@@ -196,18 +195,18 @@ class SignUpScreen extends StatelessWidget {
                   borderRadius: BorderRadius.circular(25),
                 ),
                 child: TextFormField(
-                     style:TextStyle(
-                      color: cColor().yellow,
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
-                    ) ,
+                  style: TextStyle(
+                    color: cColor().yellow,
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                  ),
                   controller: confimrpasswordController,
                   keyboardType: TextInputType.emailAddress,
                   cursorColor: cColor().yellow,
                   obscureText: true,
                   decoration: InputDecoration(
                     floatingLabelBehavior: FloatingLabelBehavior.never,
-                    labelText: "Re-enter Password" ,
+                    labelText: "Re-enter Password",
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(25),
                     ),
@@ -217,12 +216,12 @@ class SignUpScreen extends StatelessWidget {
                     enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.all(Radius.circular(25.0)),
                         borderSide: BorderSide(color: cColor().blue)),
-                     labelStyle: TextStyle(
+                    labelStyle: TextStyle(
                       color: cColor().yellow,
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
                     ),
-                 //   hintText: "Re-enter Password",
+                    //   hintText: "Re-enter Password",
                     contentPadding: EdgeInsets.only(left: 18),
                     // ignore: missing_return
                   ),

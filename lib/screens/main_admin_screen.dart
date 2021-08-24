@@ -25,7 +25,8 @@ class _MainAdminPageState extends State<MainAdminPage> {
           ),
         ),
         centerTitle: true,
-        title: Text("Hi, Nikita!",
+        title: Text(
+          "Hi, Nikita!",
           style: GoogleFonts.rosario(
             textStyle: TextStyle(
               color: cColor().blue,
@@ -35,29 +36,32 @@ class _MainAdminPageState extends State<MainAdminPage> {
           ),
         ),
       ),
-
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
             SizedBox(
-              height: med.height*0.4,
+              height: med.height * 0.4,
             ),
 
             //Case Management
             Center(
               child: InkWell(
-                onTap: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=> CaseManageAdmin()));
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => CaseManageAdmin()));
                 },
                 child: Container(
-                  height: med.height*0.06,
-                  width: med.width*0.6,
+                  height: med.height * 0.06,
+                  width: med.width * 0.6,
                   decoration: BoxDecoration(
                     color: cColor().yellow,
                     borderRadius: BorderRadius.circular(25),
                   ),
                   child: Center(
-                    child: Text("Case Management",
+                    child: Text(
+                      "Case Management",
                       style: GoogleFonts.roboto(
                         textStyle: TextStyle(
                           color: cColor().darkBrown,
@@ -72,20 +76,21 @@ class _MainAdminPageState extends State<MainAdminPage> {
             ),
 
             SizedBox(
-              height: med.height*0.03,
+              height: med.height * 0.03,
             ),
 
             //User Management
             Center(
               child: Container(
-                height: med.height*0.06,
-                width: med.width*0.6,
+                height: med.height * 0.06,
+                width: med.width * 0.6,
                 decoration: BoxDecoration(
                   color: cColor().yellow,
                   borderRadius: BorderRadius.circular(25),
                 ),
                 child: Center(
-                  child: Text("User Management",
+                  child: Text(
+                    "User Management",
                     style: GoogleFonts.roboto(
                       textStyle: TextStyle(
                         color: cColor().darkBrown,
@@ -99,14 +104,14 @@ class _MainAdminPageState extends State<MainAdminPage> {
             ),
 
             SizedBox(
-              height: med.height*0.03,
+              height: med.height * 0.03,
             ),
 
             //Signout
             Center(
               child: Container(
-                height: med.height*0.06,
-                width: med.width*0.6,
+                height: med.height * 0.06,
+                width: med.width * 0.6,
                 decoration: BoxDecoration(
                   color: cColor().blue,
                   borderRadius: BorderRadius.circular(25),
@@ -116,18 +121,21 @@ class _MainAdminPageState extends State<MainAdminPage> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       Container(
-                        margin: EdgeInsets.only(left: 30),
-                        height: med.height*0.04,
-                        width: med.width*0.1,
+                        margin: const EdgeInsets.only(left: 30),
+                        height: med.height * 0.04,
+                        width: med.width * 0.1,
                         color: cColor().yellow,
-                        child: Icon(Icons.arrow_back, size: 28, color: cColor().blue,),
+                        child: Icon(
+                          Icons.arrow_back,
+                          size: 28,
+                          color: cColor().blue,
+                        ),
                       ),
-
                       Spacer(),
-
                       Container(
-                        margin: EdgeInsets.only(right: 70),
-                        child: Text("Sign Out",
+                        margin: const EdgeInsets.only(right: 70),
+                        child: Text(
+                          "Sign Out",
                           style: GoogleFonts.roboto(
                             textStyle: TextStyle(
                               color: cColor().yellow,
@@ -142,7 +150,6 @@ class _MainAdminPageState extends State<MainAdminPage> {
                 ),
               ),
             ),
-
           ],
         ),
       ),

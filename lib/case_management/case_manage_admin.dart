@@ -58,16 +58,16 @@ class _CaseManageAdminState extends State<CaseManageAdmin> {
                 //back
                 Container(
                   margin: EdgeInsets.only(left: 10, top: 5),
-                 height: med.height*0.055,
-                  width: med.width*0.2,
+                  height: med.height * 0.055,
+                  width: med.width * 0.2,
                   decoration: BoxDecoration(
                     color: cColor().blue,
                     borderRadius: BorderRadius.circular(25),
                   ),
                   child: Center(
                     child: Container(
-                        height: med.height*0.035,
-                      width: med.width*0.09,
+                      height: med.height * 0.035,
+                      width: med.width * 0.09,
                       color: cColor().yellow,
                       child: Icon(
                         Icons.arrow_back,
@@ -96,16 +96,16 @@ class _CaseManageAdminState extends State<CaseManageAdmin> {
                 //Add icon
                 Container(
                   margin: EdgeInsets.only(left: 30, top: 5),
-                 height: med.height*0.055,
-                  width: med.width*0.2,
+                  height: med.height * 0.055,
+                  width: med.width * 0.2,
                   decoration: BoxDecoration(
                     color: cColor().blue,
                     borderRadius: BorderRadius.circular(25),
                   ),
                   child: Center(
                     child: Container(
-                     height: med.height*0.035,
-                      width: med.width*0.09,
+                      height: med.height * 0.035,
+                      width: med.width * 0.09,
                       color: cColor().yellow,
                       child: Icon(
                         Icons.add,
@@ -117,21 +117,21 @@ class _CaseManageAdminState extends State<CaseManageAdmin> {
                 ),
                 Container(
                   margin: EdgeInsets.only(left: 10, top: 5),
-                 height: med.height*0.055,
-                  width: med.width*0.2,
+                  height: med.height * 0.055,
+                  width: med.width * 0.2,
                   decoration: BoxDecoration(
                     color: cColor().blue,
                     borderRadius: BorderRadius.circular(25),
                   ),
                   child: Center(
                     child: Container(
-                      height: med.height*0.035,
-                      width: med.width*0.09,
+                      height: med.height * 0.035,
+                      width: med.width * 0.09,
                       color: cColor().blue,
                       child: Icon(
                         Icons.ballot,
                         size: 28,
-                        color:cColor().yellow,
+                        color: cColor().yellow,
                       ),
                     ),
                   ),
@@ -453,7 +453,7 @@ class _CaseManageAdminState extends State<CaseManageAdmin> {
               ),
             ),
 
-           SizedBox(height: med.height*0.015),
+            SizedBox(height: med.height * 0.015),
 
             //Buttons
             Row(
