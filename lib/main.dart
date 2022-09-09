@@ -1,11 +1,9 @@
 import 'dart:async';
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:practice/Authentication/login_page.dart';
 import 'package:practice/color_class.dart';
 import 'package:google_fonts/google_fonts.dart';
-
 
 void main() {
   runApp(const MyApp());
@@ -36,14 +34,13 @@ class Splash extends StatefulWidget {
 }
 
 class _SplashState extends State<Splash> {
-
   @override
   void initState() {
     super.initState();
     Timer(
         Duration(seconds: 3),
-            () => Navigator.of(context).pushReplacement(MaterialPageRoute(
-            builder: (BuildContext context) => Login())));
+        () => Navigator.of(context).pushReplacement(
+            MaterialPageRoute(builder: (BuildContext context) => Login())));
   }
 
   @override
@@ -55,14 +52,14 @@ class _SplashState extends State<Splash> {
         child: Column(
           children: <Widget>[
             SizedBox(
-              height: med.height*0.18,
+              height: med.height * 0.18,
             ),
 
             //logo image
             Center(
               child: Container(
-                height: med.height*0.2,
-                width: med.width*0.75,
+                height: med.height * 0.2,
+                width: med.width * 0.75,
                 decoration: BoxDecoration(
                   color: cColor().black,
                   image: DecorationImage(
@@ -74,12 +71,13 @@ class _SplashState extends State<Splash> {
             ),
 
             SizedBox(
-              height: med.height*0.1,
+              height: med.height * 0.1,
             ),
 
             Center(
               child: Container(
-                child: Text("OSCE Case Database",
+                child: Text(
+                  "OSCE Case Database",
                   style: GoogleFonts.rosario(
                     textStyle: TextStyle(
                       color: cColor().lightPink,
@@ -93,7 +91,8 @@ class _SplashState extends State<Splash> {
 
             Center(
               child: Container(
-                child: Text("Peer Practice",
+                child: Text(
+                  "Peer Practice",
                   style: GoogleFonts.rosario(
                     textStyle: TextStyle(
                       color: cColor().lightPink,
@@ -104,13 +103,9 @@ class _SplashState extends State<Splash> {
                 ),
               ),
             ),
-
-
-
           ],
         ),
       ),
     );
   }
 }
-
