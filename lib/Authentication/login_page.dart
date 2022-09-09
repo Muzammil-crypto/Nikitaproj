@@ -47,7 +47,6 @@ class _LoginState extends State<Login> {
               height: med.height * 0.08,
             ),
 
-            //Username or email textfield
             Center(
               child: Container(
                 width: med.width * 0.65,
@@ -84,10 +83,6 @@ class _LoginState extends State<Login> {
                     contentPadding: EdgeInsets.only(left: 18),
                     // ignore: missing_return
                   ),
-
-                  // validator: (val) => val.length < 6 ? 'Password too short.' : null,
-                  // onSaved: (val) => _password = val,
-                  // obscureText: _obscureText,
                 ),
               ),
             ),
@@ -105,7 +100,6 @@ class _LoginState extends State<Login> {
                   borderRadius: BorderRadius.circular(25),
                 ),
                 child: TextFormField(
-                  
                   style: TextStyle(
                     color: cColor().yellow,
                     fontSize: 18,
@@ -135,10 +129,6 @@ class _LoginState extends State<Login> {
                     contentPadding: EdgeInsets.only(left: 18),
                     // ignore: missing_return
                   ),
-
-                  // validator: (val) => val.length < 6 ? 'Password too short.' : null,
-                  // onSaved: (val) => _password = val,
-                  // obscureText: _obscureText,
                 ),
               ),
             ),
@@ -156,8 +146,8 @@ class _LoginState extends State<Login> {
                 onPressed: () {
                   passwordController.clear();
                   emailController.clear();
-                  Navigator.of(context).push(
-                      MaterialPageRoute(builder: (_) => MainAdminPage()));
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (_) => MainAdminPage()));
                 },
                 child: Text(
                   "Login",
@@ -200,20 +190,20 @@ class _LoginState extends State<Login> {
                 ),
               ),
             ),
-             SizedBox(
+            SizedBox(
               height: 30,
             ),
             GestureDetector(
               onTap: () {
-                // Navigator.of(context)
-                //     .push(MaterialPageRoute(builder: (_) => SignUpScreen()));
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (_) => SignUpScreen()));
               },
               child: Center(
                 child: Text(
                   "Forgot Password?",
                   style: GoogleFonts.rosario(
                     textStyle: TextStyle(
-                      color:cColor().yellow,
+                      color: cColor().yellow,
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
                     ),
