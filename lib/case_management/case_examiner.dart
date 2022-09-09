@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:practice/case_management/paitent_script.dart';
 
 import '../color_class.dart';
 
@@ -11,7 +10,7 @@ class CaseExaminer extends StatefulWidget {
   _CaseExaminerState createState() => _CaseExaminerState();
 }
 
-class _CaseExaminerState extends State<CaseExaminer>{
+class _CaseExaminerState extends State<CaseExaminer> {
   @override
   Widget build(BuildContext context) {
     Size med = MediaQuery.of(context).size;
@@ -26,7 +25,8 @@ class _CaseExaminerState extends State<CaseExaminer>{
           ),
         ),
         centerTitle: true,
-        title: Text("Hi, Nikita!",
+        title: Text(
+          "Hi, Nikita!",
           style: GoogleFonts.rosario(
             textStyle: TextStyle(
               color: cColor().blue,
@@ -36,12 +36,11 @@ class _CaseExaminerState extends State<CaseExaminer>{
           ),
         ),
       ),
-
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
             SizedBox(
-              height: med.height*0.03,
+              height: med.height * 0.03,
             ),
 
             //Top Row
@@ -51,18 +50,22 @@ class _CaseExaminerState extends State<CaseExaminer>{
                 //back
                 Container(
                   margin: EdgeInsets.only(left: 10, top: 5),
-                  height: med.height*0.055,
-                  width: med.width*0.2,
+                  height: med.height * 0.055,
+                  width: med.width * 0.2,
                   decoration: BoxDecoration(
                     color: cColor().blue,
                     borderRadius: BorderRadius.circular(25),
                   ),
                   child: Center(
                     child: Container(
-                      height: med.height*0.035,
-                      width: med.width*0.1,
+                      height: med.height * 0.035,
+                      width: med.width * 0.1,
                       color: cColor().yellow,
-                      child: Icon(Icons.arrow_back, size: 25, color: cColor().blue,),
+                      child: Icon(
+                        Icons.arrow_back,
+                        size: 25,
+                        color: cColor().blue,
+                      ),
                     ),
                   ),
                 ),
@@ -70,12 +73,11 @@ class _CaseExaminerState extends State<CaseExaminer>{
                 //TextField
                 Container(
                   margin: EdgeInsets.only(left: 15),
-                  height: med.height*0.055,
+                  height: med.height * 0.055,
                   width: med.width * 0.65,
                   decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(25)
-                  ),
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(25)),
                   child: TextFormField(
                     keyboardType: TextInputType.phone,
                     cursorColor: Colors.deepOrange,
@@ -84,18 +86,17 @@ class _CaseExaminerState extends State<CaseExaminer>{
                         borderRadius: BorderRadius.circular(25),
                       ),
                       focusedBorder: OutlineInputBorder(
-                          borderRadius:
-                          BorderRadius.all(Radius.circular(25.0)),
+                          borderRadius: BorderRadius.all(Radius.circular(25.0)),
                           borderSide: BorderSide(color: cColor().black)),
                       enabledBorder: OutlineInputBorder(
-                          borderRadius:
-                          BorderRadius.all(Radius.circular(25.0)),
+                          borderRadius: BorderRadius.all(Radius.circular(25.0)),
                           borderSide: BorderSide(color: cColor().black)),
                       hintStyle: const TextStyle(
                         color: Colors.black,
                       ),
                       hintText: "78         Black pain",
-                      contentPadding: EdgeInsets.only(left: 15, top: 15, bottom: 10),
+                      contentPadding:
+                          EdgeInsets.only(left: 15, top: 15, bottom: 10),
                       // prefixText: "+92",
                       // prefixStyle: TextStyle(
                       //   color: Colors.black,
@@ -104,15 +105,12 @@ class _CaseExaminerState extends State<CaseExaminer>{
                     ),
                   ),
                 ),
-
               ],
             ),
 
             SizedBox(
-              height: med.height*0.02,
+              height: med.height * 0.02,
             ),
-
-
 
             /*Column(
               children: <Widget>[
@@ -155,7 +153,7 @@ class _CaseExaminerState extends State<CaseExaminer>{
                 ),
 
                 // center widget
-                *//*Center(
+                */ /*Center(
                   child: Container(
                     height: med.height*0.68,
                     width: med.width*0.93,
@@ -174,15 +172,12 @@ class _CaseExaminerState extends State<CaseExaminer>{
                       ),
                     ),
                   ),
-                ),*//*
+                ),*/ /*
               ],
             ),*/
-
-
           ],
         ),
       ),
-
     );
   }
 }
