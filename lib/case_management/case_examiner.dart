@@ -97,10 +97,7 @@ class _CaseExaminerState extends State<CaseExaminer> {
                       hintText: "78         Black pain",
                       contentPadding:
                           EdgeInsets.only(left: 15, top: 15, bottom: 10),
-                      // prefixText: "+92",
-                      // prefixStyle: TextStyle(
-                      //   color: Colors.black,
-                      //   fontSize: 16,
+
                       // ),
                     ),
                   ),
